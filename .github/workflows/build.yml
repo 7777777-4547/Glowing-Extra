@@ -24,13 +24,8 @@ jobs:
         include: pack.mcmeta
         find: '{version}'
         replace: 'V${{ env.packversion }}'
-    - name: Archive Release
-      uses: thedoctor0/zip-release@master
-      with:
-        filename: "GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.${{ steps.buildnumber.outputs.build_number }}.zip"
-        exclusions: "*.git* *.yml"
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
         name: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.${{ steps.buildnumber.outputs.build_number }}
-        path: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.${{ steps.buildnumber.outputs.build_number }}.zip
+        path: ./
