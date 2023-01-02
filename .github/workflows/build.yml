@@ -14,6 +14,7 @@ jobs:
     - name: checkout repository
       uses: actions/checkout@v3
     - name: Generate build number
+      id: buildnumber
       uses: einaregilsson/build-number@v3
       with:
         token: ${{secrets.github_token}}
@@ -26,10 +27,10 @@ jobs:
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
-        filename: "GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.$BUILD_NUMBER.zip"
+        filename: "GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.${{ steps.buildnumber.outputs.build_number }}.zip"
         exclusions: "*.git* *.yml"
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.$BUILD_NUMBER
-        path: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.$BUILD_NUMBER.zip
+        name: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.${{ steps.buildnumber.outputs.build_number }}
+        path: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.${{ steps.buildnumber.outputs.build_number }}.zip
