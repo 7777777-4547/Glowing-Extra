@@ -18,11 +18,11 @@ jobs:
       with:
         token: ${{secrets.github_token}}
     - name: Bump pack.mcmeta version
-        uses: jacobtomlinson/gha-find-replace@0.1.2
-        with:
-          include: pack.mcmeta
-          find: '{version}'
-          replace: 'V${{ env.packversion }}'
+      uses: jacobtomlinson/gha-find-replace@0.1.2
+      with:
+        include: pack.mcmeta
+        find: '{version}'
+        replace: 'V${{ env.packversion }}'
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
@@ -32,4 +32,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.$BUILD_NUMBER
-        path: *.zip
+        path: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.$BUILD_NUMBER.zip
