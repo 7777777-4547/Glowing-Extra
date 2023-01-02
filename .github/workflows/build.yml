@@ -28,7 +28,7 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         filename: "GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.${{ steps.buildnumber.outputs.build_number }}.zip"
-        exclusions: "*.git* *.yml"
+        exclusions: "*.git* *.yml* BUILD_NUMBER"
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
