@@ -1,0 +1,35 @@
+name: Build CI
+
+on: [ push, pull_request ]
+
+env:
+  packversion: 0.1.0
+  mcversion: 1.19
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v3
+    - name: Generate build number
+      uses: einaregilsson/build-number@v3
+      with:
+        token: ${{secrets.github_token}}
+    - name: Bump pack.mcmeta version
+        uses: jacobtomlinson/gha-find-replace@0.1.2
+        with:
+          include: pack.mcmeta
+          find: '{version}'
+          replace: 'V${{ env.packversion }}'
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
+      with:
+        filename: "GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.$BUILD_NUMBER.zip"
+        exclusions: "*.git* *.yml"
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: GlowingExtra-OF_v${{ env.packversion }}-${{ env.mcversion }}+build.$BUILD_NUMBER
+        path: *.zip
