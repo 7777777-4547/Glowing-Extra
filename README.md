@@ -6,10 +6,12 @@
 ## Support Mods
 |     |
 | --- |
+| [Alloy Forgery](https://www.curseforge.com/minecraft/mc-mods/alloy-forgery) |
 | [Create](https://www.curseforge.com/minecraft/mc-mods/create) / [Create Fabric](https://www.curseforge.com/minecraft/mc-mods/create-fabric) |
 | [Expanded Delight](https://www.curseforge.com/minecraft/mc-mods/expanded-delight) |
 | [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) / [Farmer's Delight [Fabric]](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric)|
 | [Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/nethers-delight) |
+| [Nears](https://www.curseforge.com/minecraft/mc-mods/nears) |
 | [Universal Ores](https://www.curseforge.com/minecraft/mc-mods/universal-ores-fabric) |
 |     |
   <h2>Showcase</h2>
