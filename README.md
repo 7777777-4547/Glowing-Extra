@@ -6,13 +6,14 @@
 ## Support Mods
 |     |
 | --- |
-| [Alloy Forgery](https://www.curseforge.com/minecraft/mc-mods/alloy-forgery) |
-| [Create](https://www.curseforge.com/minecraft/mc-mods/create) / [Create Fabric](https://www.curseforge.com/minecraft/mc-mods/create-fabric) |
-| [Expanded Delight](https://www.curseforge.com/minecraft/mc-mods/expanded-delight) |
-| [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) / [Farmer's Delight [Fabric]](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric)|
+| [Alloy Forgery](https://modrinth.com/mod/alloy-forgery) |
+| [Create](https://modrinth.com/mod/create) / [Create Fabric](https://modrinth.com/mod/create-fabric) |
+| [Dense Ores: Refabricated](https://modrinth.com/mod/dense-ores-refabricated) |
+| [Expanded Delight](https://modrinth.com/mod/expanded-delight) |
+| [Farmer's Delight](https://modrinth.com/mod/farmers-delight) / [Farmer's Delight [Fabric]](https://modrinth.com/mod/farmers-delight-fabric)|
 | [Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/nethers-delight) |
-| [Nears](https://www.curseforge.com/minecraft/mc-mods/nears) |
-| [Universal Ores](https://www.curseforge.com/minecraft/mc-mods/universal-ores-fabric) |
+| [Nears](https://modrinth.com/mod/nears) |
+| [Universal Ores](https://modrinth.com/mod/universal_ores) |
 |     |
   <h2>Showcase</h2>
   wait...
