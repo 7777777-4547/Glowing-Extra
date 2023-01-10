@@ -11,7 +11,7 @@
 | [Dense Ores: Refabricated](https://modrinth.com/mod/dense-ores-refabricated) |
 | [Expanded Delight](https://modrinth.com/mod/expanded-delight) |
 | [Farmer's Delight](https://modrinth.com/mod/farmers-delight) / [Farmer's Delight [Fabric]](https://modrinth.com/mod/farmers-delight-fabric)|
-| [Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/nethers-delight) |
+| [Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/nethers-delight) / [Nether's Delight (Fabric)](https://www.curseforge.com/minecraft/mc-mods/nethers-delight-fabric) |
 | [Nears](https://modrinth.com/mod/nears) |
 | [Universal Ores](https://modrinth.com/mod/universal_ores) |
 |     |
